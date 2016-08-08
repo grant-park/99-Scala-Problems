@@ -1,7 +1,7 @@
 // Find out if a list is a palindrome.
 
 object P06 {
-    def isPalindrome[A](l:List[A]):Boolean = l match {
+    def isPalindrome[Any](l:List[Any]):Boolean = l match {
         case Nil => true
         case _ :: Nil => true
         case h :: tail => if (h == tail.last) isPalindrome(tail.init) else false
