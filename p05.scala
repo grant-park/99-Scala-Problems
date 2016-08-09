@@ -19,11 +19,13 @@ object P05 {
     
     // fx 
     def reverseFx[A](l:List[A]):List[A] = l.foldLeft(List[A]()) {
-        (e,n) => n :: e
+        (e,n) => 
+            println(n)
+            n :: e
     }
 
 }
-println(P05.reverseList(List(1,2,3,4,5)))
-println(P05.easyReverse(List(1,2,3,4)))
-println(P05.reverseListNT(List(1,2,3)))
+// println(P05.reverseList(List(1,2,3,4,5)))
+// println(P05.easyReverse(List(1,2,3,4)))
+// println(P05.reverseListNT(List(1,2,3)))
 println(P05.reverseFx(List(1,2,3,4,5,6,7)))
