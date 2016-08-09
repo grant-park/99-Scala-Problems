@@ -10,7 +10,6 @@ object P08 {
     }
 
     def fxDups[A](l:List[A]):List[A] = l.foldRight(List[A]()) { (a,b) =>
-        println(b)
         if (b.isEmpty || b.head != a)  a :: b else b
     }
 }
